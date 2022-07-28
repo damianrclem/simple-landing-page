@@ -1,0 +1,24 @@
+{
+    "name": "hulu-clone",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "yarn tailwind-prod && next build",
+        "tailwind-prod": "npx tailwindcss -i ./styles/globals.css -o ./dist/globals.css",
+        "tailwind-dev": "npx tailwindcss -i ./styles/globals.css -o ./dist/globals.css --watch",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "12.2.3",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "eslint": "8.20.0",
+        "eslint-config-next": "12.2.3",
+        "tailwind": "^4.0.0",
+        "tailwindcss": "^3.1.6"
+    }
+}
